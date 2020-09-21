@@ -1,0 +1,111 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ÂµVision V5.29.0.0
+Copyright (C) 2019 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: a a, a, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.29.0.0
+Toolchain Path:  D:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.29.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.7.0
+Dialog DLL:      TCM.DLL V1.36.5.0
+ 
+<h2>Project:</h2>
+D:\projects\project1\proj.uvprojx
+Project File Date:  03/20/2020
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+main.c(16): warning:  #513-D: a value of type "int" cannot be assigned to an entity of type "uint32_t *"
+  		usart_cr1=0x4001380c;
+main.c(16): warning:  #152-D: conversion of nonzero integer to pointer
+  		usart_cr1=0x4001380c;
+main.c(20): warning:  #513-D: a value of type "int" cannot be assigned to an entity of type "uint32_t *"
+  		usart_cr2=0x40013810;
+main.c(20): warning:  #152-D: conversion of nonzero integer to pointer
+  		usart_cr2=0x40013810;
+main.c(24): warning:  #513-D: a value of type "int" cannot be assigned to an entity of type "uint32_t *"
+  		usart_cr3=0x40013814;
+main.c(24): warning:  #152-D: conversion of nonzero integer to pointer
+  		usart_cr3=0x40013814;
+main.c(28): warning:  #513-D: a value of type "int" cannot be assigned to an entity of type "uint32_t *"
+  		usart_brr=0x40013808;
+main.c(28): warning:  #152-D: conversion of nonzero integer to pointer
+  		usart_brr=0x40013808;
+main.c(13): warning:  #550-D: variable "usart_cr3"  was set but never used
+  		uint32_t* usart_cr3;		
+main.c(46): warning:  #513-D: a value of type "int" cannot be assigned to an entity of type "uint32_t *"
+  		sr=0x40013800;
+main.c(46): warning:  #152-D: conversion of nonzero integer to pointer
+  		sr=0x40013800;
+main.c(47): warning:  #513-D: a value of type "int" cannot be assigned to an entity of type "uint32_t *"
+  		dr=0x40013804;
+main.c(47): warning:  #152-D: conversion of nonzero integer to pointer
+  		dr=0x40013804;
+main.c(48): warning:  #513-D: a value of type "int" cannot be assigned to an entity of type "uint32_t *"
+  		CR1=0x4001380C;
+main.c(48): warning:  #152-D: conversion of nonzero integer to pointer
+  		CR1=0x4001380C;
+main.c(62): warning:  #940-D: missing return statement at end of non-void function "send" 
+  	}
+main.c(42): warning:  #177-D: variable "tc"  was declared but never referenced
+  		int tc;
+main.c(43): warning:  #550-D: variable "rxne"  was set but never used
+  		int rxne;
+main.c(71): warning:  #513-D: a value of type "int" cannot be assigned to an entity of type "uint32_t *"
+  		sr=0x40013800;
+main.c(71): warning:  #152-D: conversion of nonzero integer to pointer
+  		sr=0x40013800;
+main.c(72): warning:  #513-D: a value of type "int" cannot be assigned to an entity of type "uint32_t *"
+  		dr=0x40013804;
+main.c(72): warning:  #152-D: conversion of nonzero integer to pointer
+  		dr=0x40013804;
+main.c(73): warning:  #513-D: a value of type "int" cannot be assigned to an entity of type "uint32_t *"
+  		CR1=0x4001380C;
+main.c(73): warning:  #152-D: conversion of nonzero integer to pointer
+  		CR1=0x4001380C;
+main.c(66): warning:  #550-D: variable "tc"  was set but never used
+  		int tc;
+main.c(67): warning:  #550-D: variable "rxne"  was set but never used
+  		int rxne;
+main.c(95): warning:  #513-D: a value of type "int" cannot be assigned to an entity of type "uint32_t *"
+  		ad1=0x40021018;
+main.c(95): warning:  #152-D: conversion of nonzero integer to pointer
+  		ad1=0x40021018;
+main.c(96): warning:  #513-D: a value of type "int" cannot be assigned to an entity of type "uint32_t *"
+  		ad2=0x40011004;
+main.c(96): warning:  #152-D: conversion of nonzero integer to pointer
+  		ad2=0x40011004;
+main.c: 30 warnings, 0 errors
+linking...
+Program Size: Code=584 RO-data=268 RW-data=8 ZI-data=1632  
+".\Objects\proj.axf" - 0 Error(s), 30 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.3.0.pack
+                Keil.STM32F1xx_DFP.2.3.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Users\Tomer Ginzburg\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
